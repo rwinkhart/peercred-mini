@@ -12,20 +12,6 @@ import (
 	"golang.org/x/sys/unix"
 )
 
-func init() {
-	osGet = getSolaris
-}
-
-func getSolaris(c net.Conn) (*Creds, error) {
-	switch c := c.(type) {
-	case *net.UnixConn:
-		return getUnix(c)
-	case *net.TCPConn:
-		// TODO: Need ideas
-	}
-	return nil, ErrUnsupportedConnType
-}
-
 func getUnix(c *net.UnixConn) (*Creds, error) {
 	raw, err := c.SyscallConn()
 	if err != nil {

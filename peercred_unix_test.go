@@ -46,12 +46,12 @@ func TestUnixSock(t *testing.T) {
 	}
 	defer c.Close()
 
-	creds, err := Get(c)
+	creds := Get(c)
 	if err != nil {
 		t.Fatalf("Get: %v", err)
 	}
 
-	uid, ok := creds.UserID()
+	uid := creds.UserID()
 	if !ok {
 		t.Errorf("no UID")
 	}

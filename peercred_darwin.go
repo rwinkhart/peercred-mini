@@ -12,20 +12,6 @@ import (
 	"golang.org/x/sys/unix"
 )
 
-func init() {
-	osGet = getDarwin
-}
-
-func getDarwin(c net.Conn) (*Creds, error) {
-	switch c := c.(type) {
-	case *net.UnixConn:
-		return getUnix(c)
-	case *net.TCPConn:
-		// TODO: use /proc tcp info for localhost connections like Windows?
-	}
-	return nil, ErrUnsupportedConnType
-}
-
 func getUnix(c *net.UnixConn) (*Creds, error) {
 	raw, err := c.SyscallConn()
 	if err != nil {

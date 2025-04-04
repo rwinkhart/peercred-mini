@@ -7,9 +7,7 @@
 package peercred
 
 import (
-	"errors"
 	"net"
-	"runtime"
 )
 
 // Creds are the peer credentials.
@@ -23,25 +21,18 @@ func (c *Creds) PID() (pid int, ok bool) {
 }
 
 // UserID returns the userid (or Windows SID) that owns the other side
-// of the connection, if known. (ok is false if not known)
+// of the connection.
 // The returned string is suitable to passing to os/user.LookupId.
-func (c *Creds) UserID() (uid string, ok bool) {
-	return c.uid, c.uid != ""
+func (c *Creds) UserID() (uid string) {
+	return c.uid
 }
 
-var osGet func(net.Conn) (*Creds, error)
-
-var (
-	ErrNotImplemented      = errors.New("not implemented on " + runtime.GOOS)
-	ErrUnsupportedConnType = errors.New("unsupported connection type")
-)
+func osGet(c net.Conn) (*Creds, error) {
+	return getUnix(c.(*net.UnixConn))
+}
 
 // Get returns the peer credentials for c.
-//
-// For unsupported system, the error is ErrNotImplemented.
-func Get(c net.Conn) (*Creds, error) {
-	if osGet == nil {
-		return nil, ErrNotImplemented
-	}
-	return osGet(c)
+func Get(c net.Conn) *Creds {
+	creds, _ := osGet(c)
+	return creds
 }
