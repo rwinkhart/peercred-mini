@@ -1,4 +1,4 @@
-module github.com/tailscale/peercred
+module github.com/rwinkhart/peercred-mini
 
 go 1.24.1
 
