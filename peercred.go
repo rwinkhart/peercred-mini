@@ -16,8 +16,8 @@ type Creds struct {
 	uid string
 }
 
-func (c *Creds) PID() (pid int, ok bool) {
-	return c.pid, c.pid != 0
+func (c *Creds) PID() (pid int) {
+	return c.pid
 }
 
 // UserID returns the userid (or Windows SID) that owns the other side

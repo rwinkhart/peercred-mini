@@ -11,7 +11,6 @@ import (
 	"net"
 	"os"
 	"path/filepath"
-	"runtime"
 	"testing"
 )
 
@@ -52,23 +51,18 @@ func TestUnixSock(t *testing.T) {
 	}
 
 	uid := creds.UserID()
-	if !ok {
+	if uid == "" {
 		t.Errorf("no UID")
 	}
 	if got, want := uid, fmt.Sprint(os.Getuid()); got != want {
 		t.Errorf("UID = %q; want %q", got, want)
 	}
-	pid, ok := creds.PID()
-	if runtime.GOOS == "freebsd" {
-		if ok {
-			t.Error("PID ok; want !ok. Thank you for fixing FreeBSD, please update the test.")
-		}
-	} else {
-		if !ok {
-			t.Errorf("no PID")
-		}
-		if got, want := pid, os.Getpid(); got != want {
-			t.Errorf("PID = %v; want %v", got, want)
-		}
+
+	pid := creds.PID()
+	if pid == 0 {
+		t.Errorf("no PID")
+	}
+	if got, want := pid, os.Getpid(); got != want {
+		t.Errorf("PID = %v; want %v", got, want)
 	}
 }
