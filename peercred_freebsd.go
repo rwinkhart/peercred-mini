@@ -9,7 +9,7 @@ import (
 	"net"
 	"strconv"
 
-	"golang.org/x/sys/unix"
+	"github.com/rwinkhart/sys/unix"
 )
 
 func getUnix(c *net.UnixConn) (*Creds, error) {
@@ -35,7 +35,7 @@ func getUnix(c *net.UnixConn) (*Creds, error) {
 		return nil, err
 	}
 	return &Creds{
-		pid: 0, // FreeBSD 13 adds a cr_pid field, can be used here.
+		pid: int(cred.Pid),
 		uid: strconv.FormatUint(uint64(cred.Uid), 10),
 	}, nil
 }

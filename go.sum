@@ -1,4 +1,2 @@
-golang.org/x/sys v0.29.1-0.20250107080300-1c14dcadc3ab h1:BMkEEWYOjkvOX7+YKOGbp6jCyQ5pR2j0Ah47p1Vdsx4=
-golang.org/x/sys v0.29.1-0.20250107080300-1c14dcadc3ab/go.mod h1:/VUhepiaJMQUp4+oa/7Zr1D23ma6VTLIYjOOTFZPUcA=
-golang.org/x/sys v0.31.0 h1:ioabZlmFYtWhL+TRYpcnNlLwhyxaM9kWTDEmfnprqik=
-golang.org/x/sys v0.31.0/go.mod h1:BJP2sWEmIv4KK5OTEluFJCKSidICx8ciO85XgH3Ak8k=
+github.com/rwinkhart/sys v0.0.0-20250404053244-7215932ae926 h1:MJe9Z46ilI9g7N3/JvQ4pHdXlZvb7InTb3aCoXrSRXM=
+github.com/rwinkhart/sys v0.0.0-20250404053244-7215932ae926/go.mod h1:vs22XiZlTvulYNkiIbKpx01rWq8dXeSF3PML0S2nQd4=

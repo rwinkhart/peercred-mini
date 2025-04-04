@@ -9,7 +9,7 @@ import (
 	"net"
 	"strconv"
 
-	"golang.org/x/sys/unix"
+	"github.com/rwinkhart/sys/unix"
 )
 
 func getUnix(c *net.UnixConn) (*Creds, error) {
