@@ -27,12 +27,8 @@ func (c *Creds) UserID() (uid string) {
 	return c.uid
 }
 
-func osGet(c net.Conn) (*Creds, error) {
-	return getUnix(c.(*net.UnixConn))
-}
-
 // Get returns the peer credentials for c.
 func Get(c net.Conn) *Creds {
-	creds, _ := osGet(c)
+	creds, _ := getUnix(c.(*net.UnixConn))
 	return creds
 }
