@@ -1,2 +1,2 @@
-github.com/rwinkhart/sys v0.0.0-20250404053244-7215932ae926 h1:MJe9Z46ilI9g7N3/JvQ4pHdXlZvb7InTb3aCoXrSRXM=
-github.com/rwinkhart/sys v0.0.0-20250404053244-7215932ae926/go.mod h1:vs22XiZlTvulYNkiIbKpx01rWq8dXeSF3PML0S2nQd4=
+github.com/rwinkhart/sys-freebsd-13-xucred v0.0.0-20250405011819-d304d362d032 h1:4qzc09ysQhkyI2oN7pLbZMQP+qHq2TlVRCkMSmbl8m8=
+github.com/rwinkhart/sys-freebsd-13-xucred v0.0.0-20250405011819-d304d362d032/go.mod h1:U89aT1yaUAbs+9Dp9i1lZ2+5GsRNYk0l42+d1wykDBA=
