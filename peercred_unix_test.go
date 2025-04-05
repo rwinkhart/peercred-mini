@@ -50,7 +50,7 @@ func TestUnixSock(t *testing.T) {
 		t.Fatalf("Get: %v", err)
 	}
 
-	uid := creds.UserID()
+	uid := creds.UID()
 	if uid == "" {
 		t.Errorf("no UID")
 	}
