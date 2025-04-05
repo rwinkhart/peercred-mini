@@ -9,7 +9,7 @@ import (
 	"net"
 	"strconv"
 
-	"github.com/rwinkhart/sys-freebsd-13-xucred/unix"
+	"golang.org/x/sys/unix"
 )
 
 func get(c *net.UnixConn) (*Creds, error) {

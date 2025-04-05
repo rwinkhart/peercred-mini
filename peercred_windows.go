@@ -7,7 +7,7 @@ package peercred
 import (
 	"fmt"
 
-	"github.com/rwinkhart/sys-freebsd-13-xucred/windows"
+	"golang.org/x/sys/windows"
 )
 
 // Get returns the peer credentials for c.
