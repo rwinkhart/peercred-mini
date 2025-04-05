@@ -1,4 +1,4 @@
-// Copyright (c) 2021 AUTHORS All rights reserved.
+// Copyright (c) 2021-2025 AUTHORS All rights reserved.
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
 
@@ -12,7 +12,7 @@ import (
 	"github.com/rwinkhart/sys-freebsd-13-xucred/unix"
 )
 
-func getUnix(c *net.UnixConn) (*Creds, error) {
+func get(c *net.UnixConn) (*Creds, error) {
 	raw, err := c.SyscallConn()
 	if err != nil {
 		return nil, fmt.Errorf("SyscallConn: %w", err)
