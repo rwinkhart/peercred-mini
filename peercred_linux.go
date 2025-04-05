@@ -31,7 +31,7 @@ func get(c *net.UnixConn) (*Creds, error) {
 		return nil, fmt.Errorf("unix.GetsockoptUcred: %w", err)
 	}
 	return &Creds{
-		pid: int(cred.Pid),
-		uid: strconv.FormatUint(uint64(cred.Uid), 10),
+		PID: int(cred.Pid),
+		UID: strconv.FormatUint(uint64(cred.Uid), 10),
 	}, nil
 }

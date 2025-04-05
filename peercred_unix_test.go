@@ -50,7 +50,7 @@ func TestUnixSock(t *testing.T) {
 		t.Fatalf("Get: %v", err)
 	}
 
-	uid := creds.UID()
+	uid := creds.UID
 	if uid == "" {
 		t.Errorf("no UID")
 	}
@@ -58,7 +58,7 @@ func TestUnixSock(t *testing.T) {
 		t.Errorf("UID = %q; want %q", got, want)
 	}
 
-	pid := creds.PID()
+	pid := creds.PID
 	if pid == 0 {
 		t.Errorf("no PID")
 	}

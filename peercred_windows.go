@@ -11,8 +11,8 @@ import (
 )
 
 // Get returns the peer credentials for c.
-func Get(h *windows.Handle) *Creds {
-	creds, _ := get(h)
+func Get(h windows.Handle) *Creds {
+	creds, _ := get(&h)
 	return creds
 }
 
@@ -37,7 +37,7 @@ func get(h *windows.Handle) (*Creds, error) {
 	}
 
 	return &Creds{
-		pid: int(clientPID),
-		uid: tokenUser.User.Sid.String(),
+		PID: int(clientPID),
+		UID: tokenUser.User.Sid.String(),
 	}, nil
 }

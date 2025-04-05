@@ -33,7 +33,7 @@ func get(c *net.UnixConn) (*Creds, error) {
 		return nil, err
 	}
 	return &Creds{
-		pid: creds.Getpid(),
-		uid: strconv.FormatUint(uint64(creds.Geteuid()), 10),
+		PID: creds.Getpid(),
+		UID: strconv.FormatUint(uint64(creds.Geteuid()), 10),
 	}, nil
 }
