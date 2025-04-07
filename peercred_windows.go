@@ -14,7 +14,7 @@ import (
 
 // Get returns the peer credentials for c.
 func Get(c net.Conn) *Creds {
-	creds, _ := get(winio.UtilGetPipeHandle(c))
+	creds, _ := get(winio.GetPipeHandle(c))
 	return creds
 }
 
