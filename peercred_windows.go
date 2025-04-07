@@ -6,20 +6,22 @@ package peercred
 
 import (
 	"fmt"
+	"net"
 
+	"github.com/Microsoft/go-winio"
 	"golang.org/x/sys/windows"
 )
 
 // Get returns the peer credentials for c.
-func Get(h windows.Handle) *Creds {
-	creds, _ := get(&h)
+func Get(c net.Conn) *Creds {
+	creds, _ := get(winio.UtilGetPipeHandle(c))
 	return creds
 }
 
-func get(h *windows.Handle) (*Creds, error) {
+func get(h windows.Handle) (*Creds, error) {
 	// get PID
 	var clientPID uint32
-	windows.GetNamedPipeClientProcessId(*h, &clientPID)
+	windows.GetNamedPipeClientProcessId(h, &clientPID)
 
 	// get SID (UID)
 	var access uint32 = windows.PROCESS_QUERY_INFORMATION

@@ -1,2 +1,4 @@
+github.com/Microsoft/go-winio v0.6.2 h1:F2VQgta7ecxGYO8k3ZZz3RS8fVIXVxONVUPlNERoyfY=
+github.com/Microsoft/go-winio v0.6.2/go.mod h1:yd8OoFMLzJbo9gZq8j5qaps8bJ9aShtEA8Ipt1oGCvU=
 github.com/rwinkhart/sys-freebsd-13-xucred v0.0.0-20250405010723-99a5f0732c0e h1:YRpZcbGU/LVLwK87IURH4Sfye6Fv0ri1IRZ27loWpHs=
 github.com/rwinkhart/sys-freebsd-13-xucred v0.0.0-20250405010723-99a5f0732c0e/go.mod h1:BJP2sWEmIv4KK5OTEluFJCKSidICx8ciO85XgH3Ak8k=
