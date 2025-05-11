@@ -1,4 +1,4 @@
 github.com/rwinkhart/go-winio-easy-pipe-handles v0.0.0-20250407031321-96994a0e8410 h1:NhHwFM3Pgm6zRUfFKvi0p5ndjfFbVWsRwmmhyFlG4PE=
 github.com/rwinkhart/go-winio-easy-pipe-handles v0.0.0-20250407031321-96994a0e8410/go.mod h1:yd8OoFMLzJbo9gZq8j5qaps8bJ9aShtEA8Ipt1oGCvU=
-github.com/rwinkhart/sys-freebsd-13-xucred v0.32.0 h1:KRbqimv9Eexf3VB2FrRAQ4v2fGGu7gt3ayMgdT0FNao=
-github.com/rwinkhart/sys-freebsd-13-xucred v0.32.0/go.mod h1:BJP2sWEmIv4KK5OTEluFJCKSidICx8ciO85XgH3Ak8k=
+github.com/rwinkhart/sys-freebsd-13-xucred v0.33.0 h1:W4J4cS0yLMLKuYePFFL2OR8MAYLoHkErJvq9FBBqK70=
+github.com/rwinkhart/sys-freebsd-13-xucred v0.33.0/go.mod h1:BJP2sWEmIv4KK5OTEluFJCKSidICx8ciO85XgH3Ak8k=
