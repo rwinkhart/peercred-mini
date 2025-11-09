@@ -1,4 +1,4 @@
-github.com/rwinkhart/go-winio-easy-pipe-handles v0.0.0-20250407031321-96994a0e8410 h1:NhHwFM3Pgm6zRUfFKvi0p5ndjfFbVWsRwmmhyFlG4PE=
-github.com/rwinkhart/go-winio-easy-pipe-handles v0.0.0-20250407031321-96994a0e8410/go.mod h1:yd8OoFMLzJbo9gZq8j5qaps8bJ9aShtEA8Ipt1oGCvU=
-github.com/rwinkhart/sys v0.35.0 h1:6ZikETjyuv9ndnSEnXQmp/M3lxyCHWoHAm3lGzy0pnE=
-github.com/rwinkhart/sys v0.35.0/go.mod h1:BJP2sWEmIv4KK5OTEluFJCKSidICx8ciO85XgH3Ak8k=
+github.com/rwinkhart/go-winio v0.1.0 h1:b72agLW+dETGmhR3VbcbwnStfgKfc5AfgJOXBJDkaHg=
+github.com/rwinkhart/go-winio v0.1.0/go.mod h1:ZWa7ssZJT30CCDGJ7fk/2SBTq9BIQrrVjrcss0UW2s0=
+github.com/rwinkhart/sys v0.38.0 h1:V1PGKcUutWtD3+VdHvyvfGtPy7PDXzKHNM1IzVq1ysY=
+github.com/rwinkhart/sys v0.38.0/go.mod h1:OgkHotnGiDImocRcuBABYBEXf8A9a87e/uXjp9XT3ks=
