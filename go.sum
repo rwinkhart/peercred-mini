@@ -1,4 +1,4 @@
-github.com/rwinkhart/go-winio v0.1.0 h1:b72agLW+dETGmhR3VbcbwnStfgKfc5AfgJOXBJDkaHg=
-github.com/rwinkhart/go-winio v0.1.0/go.mod h1:ZWa7ssZJT30CCDGJ7fk/2SBTq9BIQrrVjrcss0UW2s0=
-github.com/rwinkhart/sys v0.38.0 h1:V1PGKcUutWtD3+VdHvyvfGtPy7PDXzKHNM1IzVq1ysY=
-github.com/rwinkhart/sys v0.38.0/go.mod h1:OgkHotnGiDImocRcuBABYBEXf8A9a87e/uXjp9XT3ks=
+github.com/rwinkhart/go-winio v0.1.1 h1:kAJKiqneR7cUR01Wn5/doAAV4kOGTEGPug4oinXc5N4=
+github.com/rwinkhart/go-winio v0.1.1/go.mod h1:ZWa7ssZJT30CCDGJ7fk/2SBTq9BIQrrVjrcss0UW2s0=
+github.com/rwinkhart/sys v0.41.0 h1:pHB6HphVC132UXYZ6yeOk62abqgl+pyl5ZZnsk4iUKg=
+github.com/rwinkhart/sys v0.41.0/go.mod h1:OgkHotnGiDImocRcuBABYBEXf8A9a87e/uXjp9XT3ks=
