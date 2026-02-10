@@ -46,9 +46,6 @@ func TestUnixSock(t *testing.T) {
 	defer c.Close()
 
 	creds := Get(c)
-	if err != nil {
-		t.Fatalf("Get: %v", err)
-	}
 
 	uid := creds.UID
 	if uid == "" {
